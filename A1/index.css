@@ -1,0 +1,244 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: sans-serif;
+    background: #ffffff;
+    color: #333;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background: #000;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    background: teal;
+    color: white;
+    width: 40px;
+    height: 40px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    transition: background 0.3s;
+  }
+  
+  .logo:hover {
+    background: #0d9488;
+  }
+  
+  .nav-links a {
+    margin-left: 1rem;
+    font-size: 0.9rem;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #5eead4;
+    text-decoration: underline;
+  }
+  
+  /* Hero Section */
+  .hero {
+    position: relative;
+    height: 60vh;
+    background: url('https://images.unsplash.com/photo-1512820790803-83ca734da794') center/cover no-repeat;
+    color: white;
+  }
+  
+  .overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 3rem;
+  }
+  
+  .hero-content h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    transition: color 0.3s;
+  }
+  
+  .hero-content h1:hover {
+    color: #5eead4;
+  }
+  
+  .search-bar {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .search-bar input {
+    padding: 0.5rem;
+    flex-grow: 1;
+    border-radius: 5px 0 0 5px;
+    border: none;
+  }
+  
+  .search-bar button {
+    padding: 0.5rem 1rem;
+    background: teal;
+    color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .search-bar button:hover {
+    background: #0d9488;
+  }
+  
+  .search-bar a {
+    color: white;
+    font-size: 0.9rem;
+    text-decoration: underline;
+    transition: color 0.3s;
+  }
+  
+  .search-bar a:hover {
+    color: #5eead4;
+  }
+  
+  /* Layout */
+  .container {
+    display: flex;
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    width: 250px;
+    background: #134e4a;
+    color: white;
+    padding: 1.5rem;
+  }
+  
+  .sidebar h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+  }
+  
+  .sidebar li {
+    margin-bottom: 0.4rem;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: text-decoration 0.2s;
+  }
+  
+  .sidebar li:hover {
+    text-decoration: underline;
+  }
+  
+  /* Main */
+  .main-content {
+    flex-grow: 1;
+    padding: 2rem;
+  }
+  
+  .main-content h2 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  /* Cards */
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .card {
+    background: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 0.5rem;
+    height: 290px;
+    transition: box-shadow 0.3s;
+  }
+  
+  .card:hover {
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  }
+  
+  .card img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    transition: transform 0.3s;
+  }
+  
+  .card img:hover {
+    transform: scale(1.05);
+  }
+  
+  .card p {
+    text-align: center;
+    margin-top: 0.5rem;
+    font-weight: 600;
+    transition: color 0.3s;
+  }
+  
+  .card p:hover {
+    color: teal;
+  }
+  
+  /* Recently Added */
+  .recently-added {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .recently-added button {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .recently-added button:hover {
+    color: teal;
+  }
+  
+  .recently-added img {
+    width: 130px;
+    height: 190px;
+    object-fit: cover;
+    transition: transform 0.3s;
+  }
+  
+  .recently-added img:hover {
+    transform: scale(1.05);
+  }
+  
