@@ -1,0 +1,107 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Background image */
+  .background {
+    position: absolute;
+    inset: 0;
+    background-image: url('https://images.unsplash.com/photo-1512820790803-83ca734da794?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80');
+    background-size: cover;
+    background-position: center;
+    z-index: -2;
+  }
+  
+  /* Overlay for darkening background */
+  .overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+  }
+  
+  /* Login box */
+  .login-box {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  .login-box h2 {
+    text-align: center;
+    margin-bottom: 24px;
+    font-size: 28px;
+    color: white;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 14px;
+    color: white;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    background: linear-gradient(to right, #4f46e5, #7c3aed);
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    background: linear-gradient(to right, #4338ca, #6d28d9);
+  }
+  
+  p {
+    text-align: center;
+    margin-top: 16px;
+    font-size: 14px;
+  }
+  
+  p a {
+    color: #c7d2fe;
+    text-decoration: none;
+  }
+  
+  p a:hover {
+    text-decoration: underline;
+  }
+  
